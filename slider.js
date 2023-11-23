@@ -1,7 +1,7 @@
 const slides = document.querySelectorAll('.slides');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
-const dots = document.querySelectorAll('.dot')
+const dots = document.querySelectorAll('.dot');
 
 
 let index = 0;
@@ -75,3 +75,19 @@ const autoPlaySlide = () =>{
 window.onload=()=>{
   setInterval(autoPlaySlide,6000);
 }
+
+// var acc = document.getElementsByClassName("accordion");
+// // var acc = document.querySelectorAll("accordion");
+// var i;
+
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.maxHeight) {
+//       panel.style.maxHeight = null;
+//     } else {
+//       panel.style.maxHeight = panel.scrollHeight + "px";
+//     }
+//   });
+// }

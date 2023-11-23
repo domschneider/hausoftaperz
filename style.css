@@ -11,6 +11,22 @@ nav {
     color: white;
 }
 
+button {
+    background-color: white;
+    color:rgba(0, 0, 0, 0.888);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+    height: 50px;
+    width: 250px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
 /* Contact Page--------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .contact-container {
@@ -45,10 +61,20 @@ nav {
 
 /* Service Page--------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+.services-header {
+    text-align: center;
+}
+
+.appointment-buttons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10%;
+}
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: transparent;
-  /* color: #444; */
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;

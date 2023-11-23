@@ -76,3 +76,98 @@ nav {
     text-align: center;
     width: 75%;
 }
+
+/* Gallery Page--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.main-wrapper{
+  max-width: 1440px;
+  margin: auto;
+  /* margin-top: 0%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
+}
+
+.slider-wrapper{
+  width: 60%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides{
+  width: 100%;
+  position: absolute;
+  transition: transform .4s ease-in-out;
+}
+
+.slides h2{
+  position: relative;
+  top: 5rem;
+  left: 1rem;
+  backdrop-filter: blur(7px);
+  width: 9rem;
+  padding: 1rem;
+}
+.slides img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: .3rem;
+}
+.slider-btns{
+  position: absolute;
+  top: 70%;
+  z-index: 2;
+  width: 60%;
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider-btns span{
+  padding: 1rem 1.2rem;
+  font-size: 1.5rem;
+  background: white;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.888);
+  cursor: pointer;
+}
+.dots{
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  z-index: 1;
+}
+
+.dots .dot{
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  opacity: .2;
+  border-radius: 50%;
+  transition: opacity .2s ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width:950px) {
+  .slider-wrapper{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .slider-wrapper{
+    width: 90%;
+  }
+}
+
+/* Home (Landing) Page--------------------------------------------------------------------------------------------------------------------------------------------------------*/

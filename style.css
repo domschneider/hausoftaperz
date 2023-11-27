@@ -136,6 +136,8 @@ button:hover {
   border: none;
   outline: none;
   transition: 0.4s;
+  border-radius: 0px;
+  /* border-top: 2px solid white; */
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -151,6 +153,7 @@ button:hover {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+  /* border-bottom: 2px solid white; */
 }
 
 .accordion:after {
@@ -165,6 +168,22 @@ button:hover {
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    border-bottom: 2px solid white;
+    list-style: none;
+    border-width: 50%;
+}
+
+li {
+    border-top: 2px solid white;
 }
 
 /* Barbers Page--------------------------------------------------------------------------------------------------------------------------------------------------------*/

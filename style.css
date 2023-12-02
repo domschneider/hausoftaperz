@@ -125,6 +125,7 @@ button:hover {
     text-align: center;
     margin-bottom: 10%;
 }
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: transparent;
@@ -137,7 +138,6 @@ button:hover {
   outline: none;
   transition: 0.4s;
   border-radius: 0px;
-  /* border-top: 2px solid white; */
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -149,16 +149,13 @@ button:hover {
 .panel {
   padding: 0 18px;
   background-color: transparent;
-  /* display: none; */
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
-  /* border-bottom: 2px solid white; */
 }
 
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
-
   font-size: 10px;
   color: white;
   float: right;
@@ -174,16 +171,26 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-ul {
-    border-bottom: 2px solid white;
-    list-style: none;
-    border-width: 50%;
+    /* margin-right: 10%; */
 }
 
 li {
     border-top: 2px solid white;
+    width: 100%;
+    list-style-type: none;
+
+}
+
+.last-item {
+  border-bottom: 2px solid white;
+}
+
+@media (min-width: 600px) {
+  .services-list {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
 
 /* Barbers Page--------------------------------------------------------------------------------------------------------------------------------------------------------*/
